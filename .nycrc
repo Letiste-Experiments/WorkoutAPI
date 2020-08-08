@@ -1,0 +1,11 @@
+{
+  "all": true,
+  "include": [
+    "api/**/*.js"
+  ],
+  "exclude": [
+    "**/*.test.js",
+    "api/config",
+    "api/migrations/*.js"
+  ]
+}
