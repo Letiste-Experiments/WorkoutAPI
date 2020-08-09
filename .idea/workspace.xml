@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="015c256c-ccb3-461e-9372-7c7de110480e" name="Default Changelist" comment="" />
+    <list default="true" id="015c256c-ccb3-461e-9372-7c7de110480e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/15bf8896-e861-4322-9a47-8d242d9d2524.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/2931d6cf-4f66-4707-baa6-fb0b31101af9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/93ef737c-26b7-4c65-94dd-b2ed6fadda0e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/15bf8896-e861-4322-9a47-8d242d9d2524.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/2931d6cf-4f66-4707-baa6-fb0b31101af9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/93ef737c-26b7-4c65-94dd-b2ed6fadda0e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/food.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/food.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/food.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/food.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/meal.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/meal.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/user.test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fIxGjpDNQpYTsZSQmdOwkC3JI2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,7 +91,9 @@
       <workItem from="1596633961962" duration="4876000" />
       <workItem from="1596718887735" duration="606000" />
       <workItem from="1596794539274" duration="3782000" />
-      <workItem from="1596892100183" duration="8219000" />
+      <workItem from="1596892100183" duration="21018000" />
+      <workItem from="1596916554886" duration="100000" />
+      <workItem from="1596963439649" duration="6163000" />
     </task>
     <servers />
   </component>
@@ -95,16 +117,5 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="623" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1595923702018" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/routes/meal.test.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

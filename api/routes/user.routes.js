@@ -12,8 +12,6 @@ module.exports = app => {
   // Get a User by id
   router.get("/:id", users.findOne)
 
-  // Delete a User
-  router.delete("/:id", users.delete)
 
   // Add a Food to a User
   router.post("/:id/myfoods", users.addFood)
@@ -23,9 +21,6 @@ module.exports = app => {
 
   // Get all Meals of a User
   router.get("/:id/mymeals", users.findAllMeals)
-
-  // Delete all Users
-  router.delete("/", users.deleteAll)
 
   app.use('/workoutapi/users', router)
 }

@@ -1,4 +1,3 @@
-const assert = require("assert")
 const app = require('../../config.server')
 require("../../api/routes/user.routes")(app)
 const request = require("supertest")
@@ -17,19 +16,16 @@ describe("Users routes :", function () {
     gender: "F"
   }
 
-  afterEach(function () {
+  afterEach(function (done) {
     User.findOne({where: {email: user.email}})
       .then(res => {
         if (res) {
           res.destroy()
         }
+        done()
       })
-      .catch(err => {
-        console.log("ERROR", err)
-      })
-
+      .catch(done)
   })
-  
 
   it("GET /workoutapi/users", function (done) {
 

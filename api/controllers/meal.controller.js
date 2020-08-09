@@ -5,42 +5,45 @@ const User = db.users
 
 // Create and save a new Meal
 exports.create = async (req, res) => {
-  const newMeal = {name: req.body.name}
-  const user = await User.findByPk(req.session.userid)
-  Meal.create(newMeal)
-    .then(meal => {
-
-      let food
-      req.body.foods.forEach(async ({id, quantity, unit}) => {
-        food = await Food.findByPk(id)
-        meal.addFood(food, {through: {quantity: quantity, unit: unit}})
-      })
-      user.addMeal(meal)
-        .then(() => res.send({message: "Meal created"}))
-        .catch((err) => res.status(500).send({message: err.message}))
+  try {
+    const newMeal = {name: req.body.name}
+    const user = await User.findByPk(req.session.userid)
+    const meal = await Meal.create(newMeal)
+    let food
+    req.body.foods.forEach(async ({id, quantity, unit}) => {
+      food = await Food.findByPk(id)
+      meal.addFood(food, {through: {quantity: quantity, unit: unit}})
     })
-    .catch(err => res.status(500).send({message: err.message}))
+    await user.addMeal(meal)
+    res.send({message: "Meal created"})
+  } catch (err) {
+    res.status(500).send({message: err.message})
+  }
 }
 
 // Find all the Foods of a Meal
-exports.findAllFoods = (req, res) => {
-  const id = req.params.id
-
-  Meal.findByPk(id)
-    .then(meal => {
-      meal.getFood()
-        .then(foods => res.send(foods))
-        .catch(err => res.status(500).send({message: err.message}))
-    })
-    .catch(err => res.status(500).send({message: err.message}))
+exports.findAllFoods = async (req, res) => {
+  try {
+    const id = req.params.id
+    const meal = await Meal.findByPk(id)
+    const foods = await meal.getFood()
+    res.send(foods)
+  } catch (err) {
+    res.status(500).send({message: err.message})
+  }
 }
 
 // Delete a Meal
-exports.delete = (req, res) => {
-  const id = req.params.id
-
-  Meal.destroy({where: {id: id}})
-    .then(() => res.send({message: "Meal deleted"}))
-    .catch((err) => res.status(500).send({message: err.message}))
+exports.delete = async (req, res) => {
+  try {
+    const id = req.params.id
+    const num = await Meal.destroy({where: {id: id}})
+    if (num === 0) {
+      throw new Error("Meal doesn't exist")
+    }
+    res.send({message: "Meal deleted"})
+  } catch (err) {
+    res.status(500).send({message: err.message})
+  }
 }
 

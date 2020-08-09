@@ -1,6 +1,5 @@
 const app = require('../../config.server')
 require("../../api/routes/meal.routes")(app)
-const request = require("supertest")
 const session = require("supertest-session")
 const db = require("../../api/models")
 const User = db.users
