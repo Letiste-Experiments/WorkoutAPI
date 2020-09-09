@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="015c256c-ccb3-461e-9372-7c7de110480e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/15bf8896-e861-4322-9a47-8d242d9d2524.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/2931d6cf-4f66-4707-baa6-fb0b31101af9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/93ef737c-26b7-4c65-94dd-b2ed6fadda0e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/15bf8896-e861-4322-9a47-8d242d9d2524.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/2931d6cf-4f66-4707-baa6-fb0b31101af9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/93ef737c-26b7-4c65-94dd-b2ed6fadda0e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/6bba7ed4-e409-432a-b678-560d9f4789d8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/abd4f8d0-7ae0-493a-93a8-5d7136752462.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/cb9c86da-4307-4751-a632-d8c6a66dfd54.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/6bba7ed4-e409-432a-b678-560d9f4789d8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/abd4f8d0-7ae0-493a-93a8-5d7136752462.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/cb9c86da-4307-4751-a632-d8c6a66dfd54.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/food.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/food.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/meal.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/meal.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/user.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/models/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/food.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/food.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/meal.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/meal.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/user.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +63,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -93,12 +112,29 @@
       <workItem from="1596794539274" duration="3782000" />
       <workItem from="1596892100183" duration="21018000" />
       <workItem from="1596916554886" duration="100000" />
-      <workItem from="1596963439649" duration="6163000" />
+      <workItem from="1596963439649" duration="29012000" />
+      <workItem from="1597334749844" duration="2232000" />
+      <workItem from="1598374807296" duration="1283000" />
+      <workItem from="1598807790421" duration="962000" />
+      <workItem from="1599137961952" duration="3198000" />
+      <workItem from="1599575856475" duration="4396000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="197" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596477082622">

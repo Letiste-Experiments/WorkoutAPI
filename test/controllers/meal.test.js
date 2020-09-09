@@ -34,7 +34,7 @@ describe("Meals controllers :", function () {
       }
     })
 
-    it("should created a Meal associated to foods and a user", test(async function () {
+    it("should create a Meal associated to foods and a user", test(async function () {
       const user = await User.create(userData)
       req = {
         body: {name: "Meal", foods: [{id: 4561, quantity: 200, unit: "g"}, {id: 5671, quantity: 150, unit: "g"}]},

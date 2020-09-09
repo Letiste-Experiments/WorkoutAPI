@@ -69,7 +69,7 @@ describe('User model', function () {
       let userDup = User.build({
         firstname: "Foo",
         lastname: "Bar",
-        email: "foO@Bar.cOM",
+        email: "foo@bar.com",
         password: "foobar",
         password_confirmation: "foobar",
         age: 20,
@@ -84,13 +84,6 @@ describe('User model', function () {
       }, "Should be unique")
     })
 
-    it("should be lowered before validate", async function () {
-      const email = "FOO@BAR.COM"
-      user.email = email
-      await user.validate()
-      assert.strictEqual(user.email, email.toLowerCase())
-    })
-
     it("should reject invalid emails", async function () {
 
       let invalidEmails = ["user@example,com", "user_at_foo.org", "user.name@example.",
@@ -98,7 +91,7 @@ describe('User model', function () {
 
       for (email of invalidEmails) {
         user.email = email
-        await assert.rejects(async (err) => {
+        await assert.rejects(async () => {
           await user.validate()
         }, (err) => {
           assert.strictEqual(err.errors[0].validatorKey, "isEmail");

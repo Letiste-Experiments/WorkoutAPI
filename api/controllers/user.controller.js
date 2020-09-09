@@ -76,45 +76,6 @@ exports.addFood = async (req, res) => {
 
 }
 
-// Get all Foods of a User
-exports.findAllFoods = async (req, res) => {
-  let search = "", pageSize = null, pageNumber = 0
-  if (req.query) {
-    search = req.query.search || "",
-      pageSize = req.query.pageSize || null,
-      pageNumber = req.query.pageNumber * pageSize || 0
-  }
-  if (req.session.userid) {
-    const userid = req.session.userid
-    try {
-      const user = await User.findByPk(userid)
-      const num = await user.countFood({
-        limit: pageSize,
-        offset: pageNumber,
-        where: {
-          name: sequelize.where(
-            sequelize.fn('LOWER', sequelize.col('name')),
-            'LIKE', search.toLowerCase() + '%')
-        }
-      })
-      const foods = await user.getFood({
-        limit: pageSize,
-        offset: pageNumber,
-        where: {
-          name: sequelize.where(
-            sequelize.fn('LOWER', sequelize.col('name')),
-            'LIKE', search.toLowerCase() + '%')
-        }
-      })
-      const lastPage = pageSize > 0 ? Math.floor(num / pageSize) : 0
-      res.send({foods: [...foods], lastPage: lastPage})
-    } catch (err) {
-      res.status(500).send({message: err.message})
-    }
-  } else {
-    res.status(500).send({message: "No user logged in"})
-  }
-}
 
 // Get all Meals of a User
 exports.findAllMeals = async (req, res) => {

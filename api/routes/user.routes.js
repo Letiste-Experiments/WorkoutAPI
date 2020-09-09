@@ -11,13 +11,7 @@ module.exports = app => {
 
   // Get a User by id
   router.get("/:id", users.findOne)
-
-
-  // Add a Food to a User
-  router.post("/:id/myfoods", users.addFood)
-
-  // Get all Foods of a User
-  router.get("/:id/myfoods", users.findAllFoods)
+  
 
   // Get all Meals of a User
   router.get("/:id/mymeals", users.findAllMeals)

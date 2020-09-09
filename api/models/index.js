@@ -19,9 +19,7 @@ db.meals = require("./meal.model")(sequelize, Sequelize)
 const User = db.users
 const Food = db.foods
 const Meal = db.meals
-// User/Food Many-to-Many
-User.belongsToMany(Food, {through: 'UserFoods'})
-Food.belongsToMany(User, {through: 'UserFoods'})
+
 // Meal/Food Many-to-Many
 const MealFoods = sequelize.define('MealFoods', {
   quantity: Sequelize.FLOAT,
