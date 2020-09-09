@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015c256c-ccb3-461e-9372-7c7de110480e" name="Default Changelist" comment="" />
+    <list default="true" id="015c256c-ccb3-461e-9372-7c7de110480e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/models/recipe.test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +104,7 @@
       <workItem from="1598807790421" duration="962000" />
       <workItem from="1599137961952" duration="3198000" />
       <workItem from="1599575856475" duration="4396000" />
-      <workItem from="1599660979244" duration="679000" />
+      <workItem from="1599660979244" duration="1307000" />
     </task>
     <servers />
   </component>

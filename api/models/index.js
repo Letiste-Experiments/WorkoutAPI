@@ -15,6 +15,7 @@ db.sequelize = sequelize
 db.users = require("./user.model.js")(sequelize, Sequelize)
 db.foods = require("./food.model")(sequelize, Sequelize)
 db.meals = require("./meal.model")(sequelize, Sequelize)
+db.recipes = require("./recipe.model")(sequelize, Sequelize)
 // Defining the associations
 const User = db.users
 const Food = db.foods
