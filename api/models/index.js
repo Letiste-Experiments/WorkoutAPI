@@ -20,6 +20,7 @@ db.recipes = require("./recipe.model")(sequelize, Sequelize)
 const User = db.users
 const Food = db.foods
 const Meal = db.meals
+const Recipe = db.recipes
 
 // Meal/Food Many-to-Many
 const MealFoods = sequelize.define('MealFoods', {
@@ -28,6 +29,15 @@ const MealFoods = sequelize.define('MealFoods', {
 }, {timestamps: false})
 Meal.belongsToMany(Food, {through: MealFoods})
 Food.belongsToMany(Meal, {through: MealFoods})
+
+// Recipe/Food Many-to-Many
+const RecipeFoods = sequelize.define("RecipeFoods", {
+  quantity: Sequelize.FLOAT,
+  unit: Sequelize.STRING
+}, {timestamps: false})
+Recipe.belongsToMany(Food, {through: RecipeFoods})
+Food.belongsToMany(Recipe, {through: RecipeFoods})
+
 // User/Meal One-to-Many
 User.hasMany(Meal)
 Meal.belongsTo(User)
